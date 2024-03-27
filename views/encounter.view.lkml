@@ -1,6 +1,6 @@
 # Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
 explore: encounter {
-  hidden: yes
+  hidden: no
     join: encounter__type {
       view_label: "Encounter: Type"
       sql: LEFT JOIN UNNEST(${encounter.type}) as encounter__type ;;
